@@ -16,6 +16,7 @@
     </script>
 
     <style>
+        /* Basic CSS for styling the body */
         body {
             display: flex;
             justify-content: center;
@@ -26,17 +27,40 @@
             background-color: black; /* Black background */
             color: white; /* White text */
         }
+
+        /* Container for center alignment */
         .container {
             text-align: center;
             width: 100%;
         }
+
+        /* Styling for the Google CSE search box */
         .gcse-searchbox {
             width: 100%;
             max-width: 500px;
         }
+
+        /* Styling for the input field of the search box */
         .gcse-searchbox input {
-            color: black; /* Text inside search box should be black */
+            color: black; /* Text color inside the search box */
+            background-color: white; /* White background for the input box */
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
         }
+
+        /* Styling for the search button */
+        .gcse-searchbox input[type="submit"] {
+            background-color: #ff5722; /* Orange search button */
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Message styling below the search box */
         .message {
             margin-top: 10px;
             font-size: 18px;
@@ -45,15 +69,17 @@
     </style>
 </head>
 <body>
+
     <div class="container">
-        <!-- Embed Google Custom Search Engine -->
+        <!-- Google Custom Search Engine Embed -->
         <script async src="https://cse.google.com/cse.js?cx=f0b5ec58eddc49e7b"></script>
         <div class="gcse-searchbox"></div>
 
         <!-- Extra line of text below the search bar -->
         <div class="message">
-            Please search your movie name in the search box and watch online.
+            Please search for your movie name in the search box and watch online.
         </div>
     </div>
+
 </body>
 </html>
