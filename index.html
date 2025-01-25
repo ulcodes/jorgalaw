@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="Jsbwx9WZfe6Pgw1BBoJ175vB0vdbHzSI1EazyCiHbBw" />
     <title>Movie Search</title>
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX15ZDBX9T"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,8 +15,8 @@
         gtag('config', 'G-RX15ZDBX9T');
     </script>
 
+    <!-- CSE Embed Style -->
     <style>
-        /* Basic CSS for styling the body */
         body {
             display: flex;
             justify-content: center;
@@ -28,29 +28,26 @@
             color: white; /* White text */
         }
 
-        /* Container for center alignment */
         .container {
             text-align: center;
             width: 100%;
         }
 
-        /* Styling for the Google CSE search box */
         .gcse-searchbox {
             width: 100%;
             max-width: 500px;
         }
 
-        /* Styling for the input field of the search box */
+        /* Custom styling for search box */
         .gcse-searchbox input {
-            color: black; /* Text color inside the search box */
-            background-color: white; /* White background for the input box */
+            color: black; /* Text inside search box */
+            background-color: white; /* White background for input field */
             padding: 10px;
             font-size: 16px;
             border-radius: 5px;
             width: 100%;
         }
 
-        /* Styling for the search button */
         .gcse-searchbox input[type="submit"] {
             background-color: #ff5722; /* Orange search button */
             color: white;
@@ -60,7 +57,6 @@
             cursor: pointer;
         }
 
-        /* Message styling below the search box */
         .message {
             margin-top: 10px;
             font-size: 18px;
@@ -69,17 +65,15 @@
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Google Custom Search Engine Embed -->
+        <!-- Embed Google Custom Search Engine (CSE) -->
         <script async src="https://cse.google.com/cse.js?cx=f0b5ec58eddc49e7b"></script>
         <div class="gcse-searchbox"></div>
 
-        <!-- Extra line of text below the search bar -->
+        <!-- Message below the search box -->
         <div class="message">
             Please search for your movie name in the search box and watch online.
         </div>
     </div>
-
 </body>
 </html>
